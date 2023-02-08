@@ -1,0 +1,66 @@
+#include <iostream>
+
+//function
+int CheckValidDate(std::string Month, int Date);
+
+std::string CheckValidMonth(std::string Month);
+
+int main()
+{
+    // Prompting for the Birthday Month
+    std::string BMonth;
+    std::cout << "Enter Your Birthday Month:\n";
+    std::cin >> BMonth;
+    BMonth = CheckValidMonth(BMonth);
+
+    // Prompt for the date 
+    int BDate;
+    std::cout << "Enter Your Birthday Date:\n";
+    std::cin >> BDate;
+    BDate = CheckValidDate(BMonth,BDate);
+
+    //printing the message
+    std::cout << "Your Birthday is on: " << BDate << "th of " << BMonth << "\n";
+}
+
+int CheckValidDate(std::string Month, int Date)
+{
+    if (Month == "January" || Month == "March" || Month == "May" || Month == "July" || Month == "August" || Month == "October" || Month == "December")
+    {
+        while (Date < 1 || Date > 31)
+        {
+            std::cout << "Enter Your Birthday Date:\n";
+            std::cin >> Date;
+        }
+        return(Date);
+    }
+    else if (Month == "February")
+    {
+        while(Date < 1 || Date > 28)
+        {
+            std::cout << "Enter Your Birthday Date:\n";
+            std::cin >> Date;
+        }
+        return(Date);
+    }
+    else if (Month == "April" || Month == "June" || Month == "September" || Month == "November")
+    {
+        while (Date < 1 || Date > 30)
+        {
+            std::cout << "Enter Your Birthday Date:\n";
+            std::cin >> Date;
+        }
+        return(Date);
+    }
+}
+
+std::string CheckValidMonth(std::string Month)
+{
+    while(Month != "January" && Month != "February" && Month != "March" && Month != "April" && Month != "May" && Month != "June" && Month != "July"
+        && Month != "August" && Month != "September" && Month != "October" && Month != "November" && Month != "December")
+    {
+        std::cout << "Enter Valid Month: ";
+        std::cin >> Month;
+    }
+    return(Month);
+}
