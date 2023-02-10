@@ -1,0 +1,7 @@
+﻿  PointerMasterClass.cpp
+D:\Coursera\C++ClassDevelopment\PointerMasterClass\PointerMasterClass.cpp(20,25): warning C4305: '=': truncation from 'double' to '_Ty2'
+          with
+          [
+              _Ty2=float
+          ]
+  PointerMasterClass.vcxproj -> D:\Coursera\C++ClassDevelopment\PointerMasterClass\Debug\PointerMasterClass.exe

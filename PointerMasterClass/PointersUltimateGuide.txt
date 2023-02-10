@@ -1,0 +1,43 @@
+Pointers:
+Raw Pointers:
+Generally not advisable to use as it may lead to memory leak if the pointer is not DELETED at the end.
+May lead to dangling pointer if pointer is not equated to nullptr(PointerName = nullptr) after it is deleted.
+
+Syntax:
+int* PointerName;
+
+<datatype>* <Variable Name>;
+
+Dereferencing the pointer : That is we get the value the pointer is pointing to (not the address the actual value)
+std::cout<<*PointerName;
+*VariableName;
+
+Getting the address the pointer is pointing to :
+std::cout<<PointerName;
+
+Getting the Pointer's Address:
+std::cout<<&PointerName;
+
+Allocating memory to the pointer
+PointerName = new int;
+
+Smart Pointers:
+Unique Pointer: This means that the each pointer points to one unique memory and two unique pointers cant be equated (PointerName1 = PointerName2 is not possible)
+Syntax:
+std::unique_ptr<int> PointerName{nullptr};
+std::unique_ptr<Datatype> VariableName;
+
+Allocating Memory
+PointerName = std::make_unique<int>();
+
+Releasing Memory : this is not necessary as it handles it automatically 
+PointerName.reset();
+
+Shared Pointer:
+std::shared_ptr<int> SharedPointer1;
+std::shared_ptr<int> SharedPointer2;
+
+std::shared_ptr<Datatype> VariableName;
+
+In shared pointers we CAN EQUATE pointers to one another.
+SharedPointer1 = SharedPointer2;
