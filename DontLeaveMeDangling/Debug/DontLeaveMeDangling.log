@@ -1,0 +1,3 @@
+﻿  DontLeaveMeDangling.cpp
+D:\Coursera\C++ClassDevelopment\DontLeaveMeDangling\DontLeaveMeDangling.cpp(17,25): warning C4305: '=': truncation from 'double' to 'float'
+  DontLeaveMeDangling.vcxproj -> D:\Coursera\C++ClassDevelopment\DontLeaveMeDangling\Debug\DontLeaveMeDangling.exe
