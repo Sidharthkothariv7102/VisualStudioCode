@@ -1,0 +1,4 @@
+﻿  Exercise10.cpp
+D:\Coursera\Morec++andUnrealEngine\Exercise10\Exercise10\Deck.h(23,21): warning C4251: 'consoleCards::Deck::Cards': class 'std::vector<consoleCards::Card,std::allocator<consoleCards::Card>>' needs to have dll-interface to be used by clients of class 'consoleCards::Deck'
+D:\Coursera\Morec++andUnrealEngine\Exercise10\Exercise10\Deck.h(23): message : see declaration of 'std::vector<consoleCards::Card,std::allocator<consoleCards::Card>>'
+  Exercise10.vcxproj -> D:\Coursera\Morec++andUnrealEngine\Exercise10\Debug\Exercise10.exe
