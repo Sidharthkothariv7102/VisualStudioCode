@@ -1,0 +1,38 @@
+Inheritance:
+
+Syntax:
+class Child: public Parent 
+
+Child = Child class name 
+Parent = Parent Class name
+
+Calling a constructor in child class:
+
+Syntax:
+Child::Child(int a, int b) : Parent(a,b);
+
+Here a,b are variables common in child and parent there can 'n' number of variables.
+
+Destructor necessary for a class:
+
+Syntax:
+virtual ~Child(); (//Needed for parent class also, here child is just signifying the class name nothing else)
+
+Creating A function which can be changed by childs of the class:
+
+Syntax:
+virtual (returntype)void/int.. FunctionName();
+
+To change the function in child class.
+returntype FunctionName() override; {This is in the header file}
+
+Calling a function in child class:
+Syntax:
+returntype class::FunctionName()
+
+Example:
+void Kid::PrintMessage()
+
+Calling an inherited function which can be changed
+in the header file
+returntype functionname() override;
